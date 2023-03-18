@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -7,12 +8,8 @@
  */
 int main(void)
 {
-char msg[] = and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-ssize_t len = sizeof(msg) - 1;
-ssize_t written = 0;
-
-while (written < len)
-written += write(STDERR_FILENO, msg + written, len - written);
-
+const char *msg = and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+size_t len = strlen(msg);
+write(STDERR_FILENO, msg, len);
 return (1);
 }
