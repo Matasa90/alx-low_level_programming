@@ -1,8 +1,11 @@
-Include "main"
+#include"main.h"
 /**
- * Main - Entry point
- * Return: 0 (Succes)
+ * main - main function
+ * _putchar: print the alphabet putchar
+ * Return: Always 0
  */
+
+
 int main (void)
 {
 	_putchar('_');
