@@ -8,7 +8,7 @@
 int main(void)
 {
 int r;
-= print_sign(98);
+r = print_sign(98);
 _putchar(',');
 _putchar(' ');
 _putchar(r + '0');
